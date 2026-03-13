@@ -1,0 +1,482 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-attachment: fixed;
+  backdrop-filter: blur(9px);
+}
+.flag{
+  width: 30px;
+  margin-right: 5px;
+}
+
+.hidden{
+  display: none;
+}
+
+body,
+main,
+nav,
+footer {
+  width: 100%;
+}
+main{
+  z-index: 1;
+}
+footer{
+  z-index: 90;
+  top: 92%;
+  position: sticky;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gabarito", serif;
+}
+
+p,span,a,li {
+  font-family: "Lato", serif;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.thumbnail{
+  max-width: 300px;
+  margin: 10px auto;
+  max-height: 120px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.bg-yellow-light{
+  background: #ffd89c !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+#shopping-cart {
+  color: #ffd89c !important;
+}
+.bg-for-life,
+.swiper-pagination-bullet-active,
+.btn-danger-for-life {
+  background: #ffd89c !important;
+  border: #e0b678 !important;
+  color: #000 !important;
+}
+.btn-primary {
+  background-color: #3a2957 !important;
+  border: #43355c !important;
+  color: #fff !important;
+}
+
+.btn-success {
+  background-color: #2a7e7e !important;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #1f58d0;
+  background-color: var(--bs-btn-bg);
+}
+.btn-secondary:hover {
+  --bs-btn-bg: #072f85;
+  background-color: var(--bs-btn-bg);
+}
+.btn-secondary:active, .btn-secondary:visited{
+  --bs-btn-bg: #04215e;
+  background-color: var(--bs-btn-bg);
+}
+
+.container-content{
+  min-height: 600px;
+}
+
+/* Hamburger */
+
+#nav-icon3 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #ffd89c;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* Barra de navegación */
+.navbar,
+.barra-navegadora {
+  background-color:#b24338 !important;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.nav-item a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  text-align: center;
+}
+.barra-navegadora-li:hover,
+.barra-navegadora-li:hover > a,
+.nav-item:hover,
+.nav-link:focus,
+.nav-link:hover {
+  color: #000;
+  background: #ffd89c;
+}
+
+.menu-hamburger {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Estilos de la barra de navegación con logo */
+.barra-navegadora {
+  text-align: center;
+  width: 100%;
+}
+
+.barra-navegadora-li {
+  display: inline;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 74px;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+/* Sección de título y barra de búsqueda */
+.titulo {
+  color: #ffd89c;
+  font-size: 48px;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  background: #2a2238;
+}
+
+
+/* Sección de reseñas */
+.resenas-container {
+  margin: 20px auto;
+  width: 80%;
+  padding: 50px 0;
+  border-radius: 10px;
+  height: 320px;
+  overflow-y: scroll;
+}
+
+.resena {
+  display: flex;
+  align-items: center;
+  background-color: #c4c4c4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.icono {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-right: 15px;
+}
+h4.subtitulo{
+    background: #1c6c6e;
+    color: #ffd89c;
+    margin: 0 auto !important;
+}
+
+.estrellas {
+  color: gold;
+}
+
+/* Footer */
+.footer-redes {
+  background-color:#b24338;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  padding: 0px 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer-redes-li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-redes a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-redes a:hover {
+  color: lightblue;
+}
+
+img.logo-footer{
+  height: 60px;
+}
+
+/* Contenedor general */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* login */
+.login-textinput {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background-size: 20px;
+  font-size: 16px;
+}
+
+.login-boton {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  background-color: darkslateblue;
+}
+.login-boton:hover {
+  background-color: #322a68;
+  color: #fff;
+}
+.login-no-tienes-una-cuenta {
+  text-align: center;
+}
+
+/*
+Estilos para reseñas
+*/
+.formulario-resena {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-resena h3 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.formulario-resena label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.formulario-resena input,
+.formulario-resena select,
+.formulario-resena textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-resena button {
+  background-color: #2a7e7e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.formulario-resena button:hover {
+  background-color: #2a2238;
+}
+/*Estilos Perfil*/
+.perfil-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.perfil-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 45%;
+}
+.perfil-header {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+.perfil-formulario {
+  display: flex;
+  justify-content: space-between; 
+  border-radius: 10px; 
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.label-perfil {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.subtitulo {
+  background: antiquewhite;
+  margin: 0 auto !important;
+  text-align: center;
+  width: 100%;
+}
+
+/** Modal */
+.modal-dialog img {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .columna {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
