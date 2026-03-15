@@ -18,6 +18,7 @@ $errors = [];
 $success = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $mysqli = openConnection();
     try {
         $rawInput = file_get_contents('php://input');
         $decodedJson = json_decode($rawInput ?? '', true);
@@ -54,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         }
 
-        $mysqli = openConnection();
+       
 
         $sql = "SELECT `id`, `full_name`, `email`, `password_hash`, `phone`, `country`, `passport`, `lang`, `genre`, `home_addres`, `city`, `province`, `zip_code`, `birth_date`, `password_hash` FROM admins WHERE email = ?";
 
